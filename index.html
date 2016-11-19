@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>আজকের আবহাওয়া</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  	var rtime=Date.now();
+  	document.getElementById("rtime").innerHTML = rtime;
+
+
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+	 <table class="table table-inverse">
+  <tr>
+    <td style="width:30%"><img src="images/logo.png"></td>
+    <td style="width:50%"><div style=" margin-top:50px;text-align: right;">
+			<h2 style="line-height: 25px;"><span id="temp_c"></span></h2>
+			<p>AVERAGE | SAT 6.00</p>
+			</div></td>
+    <td style="width:20%"><h3 style="text-align: right;"><img src="" id="icon_c" width="100px" height="100px"></span></h3></td>
+    
+  </tr>
+
+</table>
+  </div>
+  <hr>
+  <div class="row" style="padding-right:20px;padding-left:20px;">
+  	<table>
+  <tr>
+    <td style="width:10%"><img src="" id="icon_dhaka"></td>
+    <td style="width:20% padding-right:5px"><p>ঢাকা </br>Dhaka</p></td>
+    <td style="width:10%"><h3 style="text-align: right;"><span id="temp_dhaka"></span></h3></td>
+    <td style="width:5%"></td>
+
+    <td style="width:10%"><img src="" id="icon_khulna"></td>
+    <td style="width:20%"><p>খুলনা</br>Khulna</p></td>
+    <td style="width:10%"><h3 style="text-align: right;"><span id="temp_khulna"></h3></td>
+    
+  </tr>
+   <tr>
+    <td style="width:10%"><img src="" id="icon_chittagong"></td>
+    <td style="width:20%"><p>চট্টগ্রাম</br>Chittagong</p></td>
+    <td style="width:10%"><h3 style="text-align: right;"><span id="temp_chittagong"></span></h3></td>
+    <td style="width:5%"></td>
+
+    <td style="width:10%"><img src="" id="icon_Barisal"></td>
+    <td style="width:20%"><p>বরিশাল</br>Barisal</p></td>
+    <td style="width:10%"><h3 style="text-align: right;"><span id="temp_Barisal"></span></h3></td>
+    
+  </tr>
+ <tr>
+    <td style="width:10%"><img src="" id="icon_rajshahi"></td>
+    <td style="width:20%"><p>রাজশাহী</br>Rajshahi</p></td>
+    <td style="width:10%"><h3 style="text-align: right;"><span id="temp_rajshahi"></span></h3></td>
+    <td style="width:5%"></td>
+
+    <td style="width:10%"><img src="" id="icon_sylhet"></td>
+    <td style="width:20%"><p>সিলেট</br>Sylhet</p></td>
+    <td style="width:10%"><h3 style="text-align: right;"><span id="temp_sylhet"></span></h3></td>
+    
+  </tr>
+</table>
+  </div>
+
+  <hr style="border:1px dotted #93dc56">
+
+  <div class="row">
+	  <div class="col-sm-6">
+	  <p><a href="#">আরো এলাকা</a> | <a href="#">More Area</a></p>
+	  	
+	  </div>
+
+	  <div class="col-sm-6">
+	  <img align="right" src="images/forca.png">
+	    	
+	  	
+	  </div>
+
+  </div>
+  <hr style="border:1px dotted #93dc56">
+
+   <div class="row">
+	  <div class="col-sm-2">
+	  <img class='img-circle' align="middle" src="images/sample.png">
+	  	
+	  </div>
+
+	  <div class="col-sm-10">
+	  <p style="font-size: 15px;">ভালো লাগছে না .... গরম লাগছে ..... :(</p>
+	  <p style="color: #9e9999;">Nazmul tanvir form Gazipur at 11.42 pm, 20.01.10</p>
+	 <p><img src="images/fb.png"><img src="images/tw.png"><img src="images/blg.png"><img src="images/like.png"><img src="images/count.png"><img align="right" src="images/comd.png"></p>
+	 <hr style="border:1px dotted #93dc56;letter-spacing: 8px;">
+	    	
+	  	
+	  </div>
+
+  </div>
+  <div class="row">
+	  <div class="col-sm-2">
+	  <img class='img-circle' align="middle" src="images/sample.png">
+	  	
+	  </div>
+
+	  <div class="col-sm-10">
+	  <p style="font-size: 15px;">ভালো লাগছে না .... গরম লাগছে ..... :(</p>
+	  <p style="color: #9e9999;">Nazmul tanvir form Gazipur at 11.42 pm, 20.01.10</p>
+	 <p><img src="images/fb.png"><img src="images/tw.png"><img src="images/blg.png"><img src="images/like.png"><img src="images/count.png"><img align="right" src="images/comd.png"></p>
+	 <hr style="border:1px dotted #93dc56">
+	    	
+	  	
+	  </div>
+	</div>
+	</br></br></br></br></br>
+	<div class="row">
+	  
+	  <img src="images/footer.png">	
+	  </div>
+
+
+
+
+</div>
+<script>
+	
+   var api_url= "https://api.wunderground.com/api/587de3d5e203a550/conditions/q/BD/"   
+   
+   
+   
+	//Dhaka weather json 
+	var weather_dhaka = new XMLHttpRequest();
+	var dhaka ="Dhaka.json"
+	weather_dhaka.open("GET",api_url+dhaka, false);
+	weather_dhaka.send(null);
+	var r_dhaka = JSON.parse(weather_dhaka.response);
+	var temp_dhaka = r_dhaka.current_observation.temp_c + "&#176;C";
+	var icon_dhaka = r_dhaka.current_observation.icon_url;
+	document.getElementById("temp_dhaka").innerHTML = temp_dhaka;
+	document.getElementById("icon_dhaka").src = icon_dhaka;
+	
+	
+	//Khulna weather json 
+	var weather_khulna = new XMLHttpRequest();
+	var khulna ="khulna.json"
+	weather_khulna.open("GET",api_url+khulna, false);
+	weather_khulna.send(null);
+	var r_khulna = JSON.parse(weather_khulna.response);
+	var temp_khulna = r_khulna.current_observation.temp_c + "&#176;C" + "</br>";
+	var icon_khulna = r_khulna.current_observation.icon_url;
+	document.getElementById("temp_khulna").innerHTML = temp_khulna;
+	document.getElementById("icon_khulna").src = icon_khulna;
+
+	//chittagong weather json 
+	var weather_chittagong = new XMLHttpRequest();
+	var chittagong ="chittagong.json"
+	weather_chittagong.open("GET",api_url+chittagong, false);
+	weather_chittagong.send(null);
+	var r_chittagong = JSON.parse(weather_chittagong.response);
+	var temp_chittagong = r_chittagong.current_observation.temp_c + "&#176;C" + "</br>";
+	var icon_chittagong = r_chittagong.current_observation.icon_url;
+	document.getElementById("temp_chittagong").innerHTML = temp_chittagong;
+	document.getElementById("icon_chittagong").src = icon_chittagong;
+
+
+
+	//Barisal weather json 
+	var weather_Barisal = new XMLHttpRequest();
+	var Barisal ="Barisal.json"
+	weather_Barisal.open("GET",api_url+Barisal, false);
+	weather_Barisal.send(null);
+	var r_Barisal = JSON.parse(weather_Barisal.response);
+	var temp_Barisal = r_Barisal.current_observation.temp_c + "&#176;C" + "</br>";
+	var icon_Barisal = r_Barisal.current_observation.icon_url;
+	document.getElementById("temp_Barisal").innerHTML = temp_Barisal;
+	document.getElementById("icon_Barisal").src = icon_Barisal;
+
+
+
+	//rajshahi weather json 
+	var weather_rajshahi = new XMLHttpRequest();
+	var rajshahi ="rajshahi.json"
+	weather_rajshahi.open("GET",api_url+rajshahi, false);
+	weather_rajshahi.send(null);
+	var r_rajshahi = JSON.parse(weather_rajshahi.response);
+	var temp_rajshahi = r_rajshahi.current_observation.temp_c + "&#176;C" + "</br>";
+	var icon_rajshahi = r_rajshahi.current_observation.icon_url;
+	document.getElementById("temp_rajshahi").innerHTML = temp_rajshahi;
+	document.getElementById("icon_rajshahi").src = icon_rajshahi;
+
+//sylhet weather json 
+	var weather_sylhet = new XMLHttpRequest();
+	var sylhet ="Dhaka.json"
+	weather_sylhet.open("GET",api_url+sylhet, false);
+	weather_sylhet.send(null);
+	var r_sylhet = JSON.parse(weather_sylhet.response);
+	var temp_sylhet = r_sylhet.current_observation.temp_c + "&#176;C" + "</br>";
+	var icon_sylhet = r_sylhet.current_observation.icon_url;
+	document.getElementById("temp_sylhet").innerHTML = temp_sylhet;
+	document.getElementById("icon_sylhet").src = icon_sylhet;
+
+//current Bangladesh 
+	var weather_c = new XMLHttpRequest();
+	var c ="Dhaka.json"
+	weather_c.open("GET",api_url+c, false);
+	weather_c.send(null);
+	var r_c = JSON.parse(weather_c.response);
+	var temp_c = r_c.current_observation.temp_c + "&#176;C" + "</br>";
+	var icon_c = r_c.current_observation.icon_url;
+	document.getElementById("temp_c").innerHTML = temp_c;
+	document.getElementById("icon_c").src = icon_c;
+
+
+
+
+</script>
+
+</body>
+</html>
+
